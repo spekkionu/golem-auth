@@ -76,10 +76,10 @@ $auth = new \Golem\Auth($storage, $userRepository);
 
 ### Logging in a User
 
-``` php
 You must pull a user record and check the credentials yourself.  This is not part of Golem Auth. 
 I recommend using the [password_hash](http://us3.php.net/manual/en/function.password-hash.php), and [password_verify](http://us3.php.net/manual/en/function.password-verify.php) functions to check credentials.
 
+``` php
 // Should return a User instance that implements Golem\Auth\Authenticatable
 $user = $userRepository->getByCredentials($email, $password);
 

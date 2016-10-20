@@ -63,6 +63,16 @@ class AuthTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(1, $this->auth->getUserId());
     }
 
+    public function test_pulling_user_id_when_not_logged_in_returns_null()
+    {
+        $this->assertNull($this->auth->getUserId());
+    }
+
+    public function test_pulling_user_when_not_logged_in_returns_null()
+    {
+        $this->assertNull($this->auth->user());
+    }
+
     public function test_loading_user_data()
     {
         // Force user id directly into storage

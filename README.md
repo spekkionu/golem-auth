@@ -1,10 +1,10 @@
 # Golem Auth
 
-[![Latest Stable Version](https://poser.pugx.org/spekkionu/golem-auth/v/stable.png)](https://packagist.org/packages/spekkionu/golem-auth)
+[![Latest Stable Version](https://poser.pugx.org/golem/auth/v/stable.png)](https://packagist.org/packages/golem/auth)
 [![Build Status](https://travis-ci.org/spekkionu/golem-auth.svg?branch=master)](https://travis-ci.org/spekkionu/golem-auth)
 [![Code Coverage](https://scrutinizer-ci.com/g/spekkionu/golem-auth/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/spekkionu/golem-auth/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spekkionu/golem-auth/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/spekkionu/golem-auth/?branch=master)
-[![Total Downloads](https://poser.pugx.org/spekkionu/golem-auth/downloads.png)](https://packagist.org/packages/spekkionu/golem-auth)
+[![Total Downloads](https://poser.pugx.org/golem/auth/downloads.png)](https://packagist.org/packages/golem/auth)
 
 Simple authentication storage library.  
 

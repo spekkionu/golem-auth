@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/spekkionu/golem-auth.svg?branch=master)](https://travis-ci.org/spekkionu/golem-auth)
 [![Code Coverage](https://scrutinizer-ci.com/g/spekkionu/golem-auth/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/spekkionu/golem-auth/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spekkionu/golem-auth/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/spekkionu/golem-auth/?branch=master)
-[![Total Downloads](https://poser.pugx.org/golem/auth/downloads.png)](https://packagist.org/packages/golem/auth)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/54f54c0d-97c7-4edd-ac12-f1a8bbeba00f/mini.png)](https://insight.sensiolabs.com/projects/54f54c0d-97c7-4edd-ac12-f1a8bbeba00f)
 
 Simple authentication storage library.  
 

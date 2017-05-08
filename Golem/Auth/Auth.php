@@ -8,22 +8,22 @@ class Auth implements AuthInterface
     /**
      * @var StorageInterface
      */
-    private $storage;
+    protected $storage;
 
     /**
      * @var string|int|null
      */
-    private $id;
+    protected $id;
 
     /**
      * @var Authenticatable|null
      */
-    private $user;
+    protected $user;
 
     /**
      * @var UserRepository
      */
-    private $repository;
+    protected $repository;
 
     /**
      * Auth constructor.

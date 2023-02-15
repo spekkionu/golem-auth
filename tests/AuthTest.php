@@ -1,12 +1,13 @@
 <?php
 namespace Golem\Auth\Test;
 
+use PHPUnit\Framework\TestCase;
 use Golem\Auth\Test\Example\Repository;
 use Golem\Auth\Storage\MemoryStorage;
 use Golem\Auth\Auth;
 use Golem\Auth\Test\Example\User;
 
-class AuthTest extends \PHPUnit_Framework_TestCase
+class AuthTest extends TestCase
 {
     /**
      * @var Auth
@@ -23,8 +24,9 @@ class AuthTest extends \PHPUnit_Framework_TestCase
      */
     private $repository;
 
-    public function setUp()
+    public function setUp(): void
     {
+        parent::setUp();
         $this->storage = new MemoryStorage();
         $this->repository = new Repository();
         $this->auth = new Auth($this->storage, $this->repository);
@@ -82,11 +84,9 @@ class AuthTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(1, $user->getAuthId());
     }
 
-    /**
-     * @expectedException \RuntimeException
-     */
     public function test_loading_invalid_user()
     {
+        $this->expectException(\RuntimeException::class);
         // Force user id directly into storage
         $this->storage->store(6);
         $user = $this->auth->user();

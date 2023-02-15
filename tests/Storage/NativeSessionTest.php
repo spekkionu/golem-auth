@@ -1,26 +1,29 @@
 <?php
 namespace Golem\Auth\Test\Storage;
 
+use PHPUnit\Framework\TestCase;
 use Golem\Auth\Storage\NativeSession;
 
-class NativeSessionTest extends \PHPUnit_Framework_TestCase
+class NativeSessionTest extends TestCase
 {
     /**
      * @var NativeSession
      */
     private $storage;
 
-    public function setUp()
+    public function setUp(): void
     {
+        parent::setUp();
         if (isset($_SESSION['session_key'])) {
             unset($_SESSION['session_key']);
         }
         $this->storage = new NativeSession('session_key');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         unset($_SESSION['session_key']);
+        parent::tearDown();
     }
 
     public function test_storing_and_reading()

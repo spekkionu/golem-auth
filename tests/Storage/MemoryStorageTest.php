@@ -1,17 +1,19 @@
 <?php
 namespace Golem\Auth\Test\Storage;
 
+use PHPUnit\Framework\TestCase;
 use Golem\Auth\Storage\MemoryStorage;
 
-class MemoryStorageTest extends \PHPUnit_Framework_TestCase
+class MemoryStorageTest extends TestCase
 {
     /**
      * @var MemoryStorage
      */
     private $storage;
 
-    public function setUp()
+    public function setUp(): void
     {
+        parent::setUp();
         $this->storage = new MemoryStorage();
     }
 
